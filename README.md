@@ -15,6 +15,24 @@ LegalEase: Virtual Legal Assistance is an innovative digital platform designed t
 4. Centralized Case and Client Management (Workspace): Provides a centralized hub to manage clients, cases, appointments, and daily tasks, improving organization and productivity.
 Integrated Scheduling and Task Management: Allows users to manage their schedules effectively, track upcoming deadlines, and ensure timely completion of tasks and meetings.
 
+### Project Demo
+![Screenshot 2024-11-15 111708](https://github.com/user-attachments/assets/abf59dbf-5f4c-4e2b-b3af-d62bf12613f3)
+![Screenshot 2024-11-15 111743](https://github.com/user-attachments/assets/b15b3546-3c0f-4cff-a1e4-710ef8c5c149)
+![Screenshot 2024-11-15 111837](https://github.com/user-attachments/assets/684e9aa9-fdd7-4955-b2fb-0bc57f287505)
+![Screenshot 2024-11-15 111924](https://github.com/user-attachments/assets/db6832a2-2be9-4592-a0b9-d2866b9f4a8e)
+![Screenshot 2024-11-15 111951](https://github.com/user-attachments/assets/29db20fc-c9b4-474d-b995-acb183da1408)
+![Screenshot 2024-11-15 112144](https://github.com/user-attachments/assets/bbe49144-3bc4-4632-a18f-7a0b76ae228d)
+![Screenshot 2024-11-15 112539](https://github.com/user-attachments/assets/97b37610-ba1b-4a4c-9d7f-4e8f37ba6348)
+![Screenshot 2024-11-15 112839](https://github.com/user-attachments/assets/3ff0861e-8e7e-4bec-b72b-d216ce2d8e0b)
+![Screenshot 2024-11-15 113202](https://github.com/user-attachments/assets/9081d24d-e7ce-4009-9d4f-b8c1b2706d62)
+![Screenshot 2024-11-15 113300](https://github.com/user-attachments/assets/3ad4cd0a-20e7-4aa1-9388-fb51cb0ba58c)
+![Screenshot 2024-11-15 113331](https://github.com/user-attachments/assets/56aae333-70a6-4f2b-8afd-e33a9e5dbffb)
+![Screenshot 2024-11-15 113544](https://github.com/user-attachments/assets/df172709-b771-48ad-bd57-a4009b7aa9a8)
+![Screenshot 2024-11-15 114403](https://github.com/user-attachments/assets/005f0448-052a-46ba-954e-946bba1ef7c9)
+
+
+
+
 
 
 
