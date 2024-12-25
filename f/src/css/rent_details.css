@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.rent-details {
+  width: 95%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.rent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 145px;
+  margin-right: 145px;
+}
+
+.rent-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.rent-search {
+  display: flex;
+  align-items: center;
+}
+
+.rent-search label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #333;
+}
+
+.rent-search input {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.add-client-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-client-button:hover {
+  background-color: #555;
+}
+
+.rent-table-container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rent-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.rent-table th,
+.rent-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #333;
+}
+
+.rent-table th {
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.rent-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.rent-table td {
+  color: #333;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-edit {
+  background-color: #333;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #555;
+}
+
+.btn-delete {
+  background-color: #e0e0d1;
+  color: #333;
+}
+
+.btn-delete:hover {
+  background-color: #ccc;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ccc;
+  color: #333;
+  font-size: 14px;
+}
+
+.pagination button:disabled {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 14px;
+  color: #333;
+  margin: 0 10px;
+}

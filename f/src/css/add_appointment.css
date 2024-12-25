@@ -1,0 +1,78 @@
+/* add_appointment.css */
+
+.appointment-container {    
+margin-left: 450px;
+margin-top: 100px;  
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.appointment-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.appointment-form .form-select,
+.appointment-form .form-input,
+.appointment-form .form-textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.appointment-form .form-textarea {
+  height: 80px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+.add-appoint-form-button {
+  width: 99%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 1px;
+}
+
+.add-appoint-form-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.add-appoint-form-link {
+  width: 99%;
+  padding: 12px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 20px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+}
+
+.add-appoint-form-link:hover {
+  background-color: #c00909;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+

@@ -1,0 +1,24 @@
+/* Button Styling */
+.edit-btn {
+  background-color: #007bff; /* Blue */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  width: 94%;
+}
+
+.delete-btn {
+  background-color: red; /* Red */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  width: 94%;
+}

@@ -1,0 +1,134 @@
+/* Container holding the entire content */
+
+.docs {
+  background-color: linear-gradient(135deg, #f9f9f9, #e4e4e4);
+}
+
+.document-container {
+  text-align: center;
+  margin-top: 10px;
+  padding: 40px 0;
+  border-radius: 15px;
+}
+
+/* Title and Subtitle styling */
+.document-container h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.document-container h3 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Container holding the cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+  gap: 30px;
+  justify-items: center;
+  padding: 20px 10px;
+}
+
+/* Styling for each card */
+.document-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid #f2f2f2;
+  transition: all 0.3s ease-in-out;
+}
+
+.document-card:hover {
+  transform: translateY(-12px); /* Raised card effect */
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  border-color: #0056b3; /* Darker shade of blue for border on hover */
+}
+
+/* Icon styling inside each card */
+.document-card .icon {
+  background-color: #007bff;
+  padding: 15px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.document-card:hover .icon {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+  color: #fff; /* Icon color change on hover */
+}
+
+/* Styling for the document name */
+.document-card h4 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.document-card:hover h4 {
+  color: #0056b3; /* Darker shade of blue text on hover */
+}
+
+/* Styling for the description text */
+.document-card p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  transition: color 0.3s ease-in-out;
+}
+
+.document-card:hover p {
+  color: #555; /* Darken text color on hover */
+}
+
+/* Styling for the detailed information */
+.document-card .details {
+  font-size: 0.95em;
+  color: #555;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+
+  .document-container {
+    padding: 20px;
+  }
+
+  .document-container h1 {
+    font-size: 2.2em;
+  }
+
+  .document-container h3 {
+    font-size: 1.5em;
+  }
+}

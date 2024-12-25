@@ -1,0 +1,67 @@
+.header-section-dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Increase gap to add more spacing between boxes */
+  margin: 20px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px; /* Increase padding for better visual spacing */
+  width: 280px; /* Increase width to make boxes larger */
+  height: 170px; /* Increase height to make boxes larger */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: #fff;
+  text-align: center;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon-workspace {
+  font-size: 50px; /* Increase icon size to fit the larger box */
+  margin-bottom: 15px;
+}
+
+.info-content h3 {
+  margin: 0;
+  font-size: 20px; /* Increase font size for better readability */
+}
+
+.info-content p {
+  margin: 8px 0 0;
+  font-size: 28px; /* Increase font size to stand out in larger boxes */
+  font-weight: bold;
+}
+
+/* Different background colors for each box */
+.client-box {
+  background-color: #4a90e2; /* Blue */
+}
+
+.cases-box {
+  background-color: #50c878; /* Green */
+}
+
+.tasks-box {
+  background-color: #ffae42; /* Orange */
+}
+
+.appointments-box {
+  background-color: #d9534f; /* Red */
+}

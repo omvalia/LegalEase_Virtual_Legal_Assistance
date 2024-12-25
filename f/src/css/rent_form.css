@@ -1,0 +1,119 @@
+/* Container styles */
+.lease-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.lease-form-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Header */
+.lease-form-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form styles */
+.lease-form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.lease-form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styles */
+.lease-form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+/* Input styles */
+.lease-input-rent-form {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.lease-input-rent-form:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit button styles */
+.lease-submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.leese-form-link{
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+/* Progress bar styles */
+.lease-progress-bar-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.lease-progress-bar {
+    height: 100%;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .lease-form-row {
+        flex-direction: column;
+    }
+
+    .lease-form-column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

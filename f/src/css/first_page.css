@@ -1,0 +1,497 @@
+/*Section 1*/
+/* Global styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 14px;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Navbar section */
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: transparent; /* Transparent background */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 150px; /* Adjust the logo size if needed */
+  height: auto;
+  /* margin-right: 15px; */
+}
+
+.site-title-first {
+  color: #001f34; /* Set text color to black */
+  font-size: 2rem;
+}
+
+.nav-buttons-first-page {
+  display: flex;
+  align-items: center;
+}
+
+.nav-btn-first-page {
+  background-color: #001f34; /* Green background */
+  border: none;
+  color: white; /* White text */
+  padding: 12px 28px; /* Increased padding for a bigger button */
+  font-size: 1.2rem; /* Slightly larger font */
+  margin-left: 20px; /* Adjust spacing between buttons */
+  cursor: pointer;
+  border-radius: 30px; /* More rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Added transform for scale effect */
+}
+
+.nav-btn-first-page:hover {
+  background-color: #001f34; /* Darker green on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.nav-btn-first-page:active {
+  transform: scale(1); /* Reset scale when the button is pressed */
+}
+
+.menu-btn {
+  font-size: 2.8rem; /* Increase size of the hamburger icon */
+  background: none;
+  border: none;
+  color: black; /* Set hamburger icon to black */
+  cursor: pointer;
+  padding: 5px 10px; /* Add some padding for better click area */
+}
+
+/* First section with background image */
+.hero-section {
+  height: 100vh; /* Full viewport height */
+  background-image: url("C:/Users/omvalia/Desktop/LegalEase_Virtual_Legal_Assistance/frontend/public/images/bg_images.png"); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black; /* Make text color black */
+  position: relative;
+  text-align: left; /* Align text to the left */
+  padding: 0 50px; /* Add padding for proper spacing */
+}
+
+.hero-content h1 {
+  font-size: 3.5rem; /* Increase size for the main heading */
+  line-height: 1.2; /* Proper spacing between lines */
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.5rem; /* Larger size for the description text */
+  line-height: 1.5;
+  margin-bottom: 0; /* Remove bottom margin to align with the button */
+  display: inline-block; /* Display inline to keep it beside the button */
+  vertical-align: middle; /* Align vertically with the button */
+}
+
+.see-service-btn {
+  background-color: #003c64;
+  color: white;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 65px;
+  margin-left: 60px; /* Space between the text and the button */
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  display: inline-block; /* Inline to keep beside the text */
+  vertical-align: middle; /* Align vertically with the text */
+}
+
+.see-service-btn:hover {
+  background-color: #333; /* Darker background on hover */
+}
+
+/* Section 2 */
+
+.info-section {
+  height: 100vh;
+  background-color: #ffffff; /* Background color */
+  padding: 40px; /* Spacing around the section */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+  justify-content: flex-start; /* Align items to the left */
+  margin-top: 20px; /* Margin on top to separate from previous section */
+}
+
+.info-content-first {
+  max-width: 50%; /* Limit width for the content */
+  margin-left: 100px; /* Shift the content towards the right */
+}
+
+.info-content-first h2 {
+  font-size: 2.5rem; /* Increased font size for the header */
+  margin-bottom: 20px; /* Space below the header */
+  text-align: justify; /* Justify header text */
+}
+
+.info-content-first p {
+  font-size: 1.2rem; /* Increased font size for the paragraph */
+  line-height: 1.5; /* Line height for readability */
+  margin-bottom: 20px; /* Space below the paragraph */
+  text-align: justify; /* Justify paragraph text */
+}
+
+.action-btn {
+  background-color: #003c64; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 1rem; /* Font size for the button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+  display: inline-block; /* Allow margin and alignment */
+  margin-left: auto; /* Shift button towards the right */
+}
+
+.action-btn:hover {
+  background-color: #00254d; /* Darker background on hover */
+}
+
+.info-image {
+  max-width: 50%; /* Limit width  the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 10px; /* Space between text and image */
+}
+
+/* Section 3 */
+/* New Services Section Styles */
+
+.services-section {
+  background-color: #323232; /* Section background color */
+  padding: 40px; /* Spacing around the section */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items horizontally */
+  margin-top: 20px; /* Margin on top to separate from previous section */
+  height: auto;
+}
+
+.services-header {
+  font-size: 2.5rem; /* Font size for the header */
+  margin-bottom: 20px; /* Space below the header */
+  color: #ffffff; /* Header color */
+}
+
+.services-content {
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(2, 1fr); /* Create two columns */
+  gap: 20px; /* Space between boxes */
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Limit maximum width */
+}
+
+.service-box {
+  padding: 20px; /* Padding inside the boxes */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  max-height: 300px;
+}
+.service-box:nth-child(1) {
+  background-color: #003c64; /* Box 1 color */
+  color: #ffffff;
+}
+
+.service-box:nth-child(1) h3 {
+  background-color: #003c64; /* Box 1 color */
+  color: #ffffff;
+}
+
+.service-box:nth-child(2) {
+  background-color: #e3dfd6; /* Box 2 color */
+}
+
+.service-box:nth-child(3) {
+  background-color: #ffffff; /* Box 3 color */
+}
+
+.service-box h3 {
+  font-size: 1.7rem; /* Font size for sub-headers */
+  margin-bottom: 10px; /* Space below the sub-header */
+  color: #000000; /* Sub-header color */
+}
+
+.service-box:nth-child(4) {
+  padding: 0px;
+}
+
+.service-box p {
+  font-size: 1.3rem; /* Font size for paragraph */
+  line-height: 1.5; /* Line height for readability */
+  text-align: justify;
+}
+
+.image-box {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  height: auto; /* Ensure the box fills the entire height */
+}
+
+.service-image {
+  width: 100%; /* Make image touch all walls of the box */
+  height: 100%; /* Ensure image fills entire height of the box */
+  object-fit: cover; /* Crop the image to fill the box while preserving aspect ratio */
+  border-radius: 8px; /* Ensure image corners match the box */
+}
+
+.news-section {
+  background-color: #ffffff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.news-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.news-content {
+  display: flex;
+  justify-content: space-between; /* Aligns the news header and bullet points */
+  gap: 40px;
+}
+
+.news-header {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 20px;
+  align-self: center; /* Center the header horizontally */
+  text-align: center; /* Ensure the text inside is centered */
+  width: 50%; /* Adjust width to balance with bullet points */
+}
+
+.news-bullet {
+  width: 50%; /* Bullet points take half the width of the content */
+}
+
+.news-bullet ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.2rem; /* Slightly larger font for readability */
+  line-height: 1.8;
+}
+
+.news-bullet ul li {
+  margin-bottom: 10px;
+}
+
+/* .new-image{
+  max-width: 200px;
+  margin-bottom: 20px;
+  margin-left: 450px;
+} */
+.news-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s;
+}
+
+.news-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.news-item h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.news-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+/* Section 5*/
+/* Footer Styles */
+.footer {
+  background-color: #001f34;
+  /* background-color: #323232; */
+  color: #ffffff; /* White text */
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap; /* Ensures responsive layout */
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 250px; /* Ensure sections don't shrink too small */
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 1.8rem; /* Increased font size */
+  color: #ffffff;
+}
+
+.footer-section p {
+  margin: 10px 0;
+  font-size: 1.1rem; /* Increased paragraph font size */
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section.about {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  padding-top: 10px;
+}
+
+.footer-section.social {
+  display: flex;
+  flex-direction: column; /* Stack header and icons vertically */
+  align-items: center; /* Center-align everything */
+}
+
+.footer-section.social .icons-container {
+  display: flex; /* Arrange icons horizontally */
+  justify-content: center; /* Center the icons horizontally */
+  margin-top: 10px; /* Add a bit of space between the header and icons */
+}
+
+.social-icon {
+  width: 30px; /* Set a fixed width for icons */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Space between icons */
+  transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.social-icon:last-child {
+  margin-right: 0; /* Remove margin after the last icon */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Newsletter Input Field */
+.newsletter-input {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 250px;
+  background-color: #ffffff; /* White background for email input */
+  color: #003c64; /* Dark text for contrast */
+}
+
+.newsletter-input::placeholder {
+  color: #003c64; /* Placeholder text color */
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  display: flex; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+}
+
+.newsletter-input {
+  padding: 8px; /* Decreased padding */
+  margin-right: 10px; /* Space between input and button */
+  border-radius: 25px;
+  border: 1px solid #003c64; /* Optional border for visibility */
+  outline: none;
+  font-size: 0.9rem; /* Decreased font size */
+  width: 200px; /* Decreased width */
+  background-color: #ffffff; /* White background for email input */
+  color: #003c64; /* Dark text for contrast */
+}
+
+.newsletter-input::placeholder {
+  color: #003c64; /* Placeholder text color */
+}
+
+/* Newsletter Button */
+.newsletter-button {
+  padding: 8px 16px; /* Decreased padding */
+  background-color: #28a745; /* Green background */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.9rem; /* Decreased font size */
+  transition: background-color 0.3s;
+}
+
+.newsletter-button:hover {
+  background-color: #218838; /* Darker shade of green on hover */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #e3dfd6;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #e3dfd6;
+}

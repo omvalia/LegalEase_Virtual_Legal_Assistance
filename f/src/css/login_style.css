@@ -1,0 +1,328 @@
+.App-login {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+* {
+    box-sizing: border-box;
+}
+
+.container-login {
+    background: linear-gradient(135deg, #0f0e17, #3a3a40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    /* margin: -20px 0 50px; */
+}
+
+.h1-login {
+    font-weight: bold;
+    margin: 0;
+    font-size: 2.5rem; /* Increased size */
+}
+
+.h2-login {
+    text-align: center;
+    font-size: 1.5rem; /* Increased size */
+}
+
+.p-login {
+    font-size: 1rem; /* Increased size */
+    font-weight: 100;
+    line-height: 24px; /* Increased line height */
+    letter-spacing: 0.5px;
+    margin: 30px 0 40px; /* Increased margins */
+}
+
+
+.button-login {
+    border-radius: 20px;
+    border: 1px solid;
+    background-color: #003c64;
+    color: #ffffff;
+    font-size: 1rem; /* Increased size */
+    font-weight: bold;
+    padding: 15px 60px; /* Increased padding */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin-top: 15px;
+}
+
+.button-login:hover{
+    background-color: #0c2b40;
+}
+
+.button-login:active {
+    transform: scale(0.95);
+}
+
+.button-login:focus {
+    outline: none;
+}
+
+.ghost-login {
+    border-radius: 20px;
+    background-color: #fff;
+    color: #003c64;
+    font-size: 1rem; /* Increased size */
+    font-weight: bold;
+    padding: 15px 60px; /* Increased padding */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-color: #ffffff;
+}
+
+.ghost-login-back  {
+    border-radius: 20px;
+    background-color: #fff;
+    color: #003c64;
+    font-size: 0.6rem; /* Increased size */
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 15px 60px; /* Increased padding */
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    border-color: #ffffff;
+    width: 200px;
+    font-size: 1rem;
+}
+
+.ghost-login-back a{
+    text-decoration: none;
+    color: #003c64;
+}
+
+.ghost-login:hover, .ghost-login-back:hover {
+    color: #003c64;
+    background-color: #eee;
+}
+
+
+.form-container {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 70px; /* Increased padding */
+    height: 100%;
+    text-align: center;
+}
+
+.input-login {
+    background-color: #eee;
+    border: none;
+    padding: 15px 20px; /* Increased padding */
+    margin: 12px 0; /* Increased margin */
+    width: 100%;
+    font-size: 1rem; /* Increased font size */
+}
+
+select {
+    background-color: #eee;
+    border: none;
+    padding: 15px 20px; /* Increased padding */
+    margin: 12px 0; /* Increased margin */
+    width: 100%;
+    font-size: 1rem; /* Increased font size */
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 15px 15px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 950px;
+    max-width: 100%;
+    min-height: 650px; 
+}
+
+.login-form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+@keyframes show {
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.overlay-container-login {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.container.right-panel-active .overlay-container-login {
+    transform: translateX(-100%);
+}
+
+.overlay-login {
+    background: rgba(20, 20, 30, 0.85);;
+    background: -webkit-linear-gradient(to right, rgba(20, 20, 30, 0.85));
+    background: linear-gradient(to right, rgba(20, 20, 30, 0.85));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #ffffff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay-login {
+    transform: translateX(50%);
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 60px; /* Increased padding */
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.overlay-right {
+    background: rgba(20, 20, 30, 0.85);
+    right: 0;
+    transform: translateX(0);
+}
+
+.overlay-left {
+    background: rgba(20, 20, 30, 0.85);
+    left: 0;
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+/* Forgot Password */
+
+.forgot-pass-modal {
+    position: fixed;
+    bottom: 20px;
+    right: 240px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.forgot-pass-content {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.forgot-pass-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.forgot-pass-update-btn, .forgot-pass-cancel-btn {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.forgot-pass-update-btn {
+    background-color: #003c64;
+    color: white;
+}
+
+.forgot-pass-cancel-btn {
+    background-color: #e3dfd6;
+    color: black;
+}
+
+.forgot-pass-text {
+    color: #003c64;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.forgot-pass-label {
+    display: flex;
+    margin-left: auto;
+    padding-top: 5px;
+}
+

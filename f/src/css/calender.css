@@ -1,0 +1,77 @@
+.calendar-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    margin-left: 20px;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar-week {
+    display: flex;
+    justify-content: space-around;
+}
+
+.calendar-card {
+    width: 100%;
+    max-width: 150px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.calendar-card:hover {
+    transform: scale(1.05);
+}
+
+.calendar-card-header {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.calendar-date {
+    font-size: 16px;
+    color: #666;
+}
+
+.calendar-card-body {
+    font-size: 14px;
+    color: #555;
+}
+
+.calendar-event, .calendar-task, .calendar-hearing {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #e9f5ff;
+}
+
+.calendar-task {
+    background-color: #ffe9e9;
+}
+
+.calendar-today {
+    border: 2px solid #007bff;
+    background-color: #e9f7ff;
+}
+
+.calendar-hearing {
+    background-color: #e9ffe9; /* Light green for hearing dates */
+    border: 1px solid #5cb85c; /* Darker green border */
+    color: #3d8b3d;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
