@@ -1,2 +1,2 @@
-### Project Overview
+## Project Overview
 LegalEase: Virtual Legal Assistance is an innovative digital platform designed to streamline routine legal tasks and enhance productivity for legal professionals. By integrating features such as AI-driven legal assistance (LawGPT), automated document generation, real-time legal news updates, centralized case and client management, and integrated scheduling, LegalEase offers a comprehensive, user-friendly solution to manage both legal and administrative functions. Built with a responsive ReactJS front-end and a robust Flask back-end, the platform reduces manual effort, improves accuracy, and enables lawyers to focus on high-value legal analysis and client advocacy, bridging the gap in digital support for the legal sector.
