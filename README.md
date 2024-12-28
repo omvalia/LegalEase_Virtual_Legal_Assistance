@@ -7,6 +7,7 @@ LegalEase: Virtual Legal Assistance is an innovative digital platform designed t
 3. Libraries used:
    - News API: Fetches real-time law-based news updates for the platform.
    - Llama2 7B Model: Powers LawGPT, an AI-driven legal assistant that provides legal insights and supports case analysis.
+   - DocxTemplate: Facilitates document generation, enabling quick and accurate creation of legal documents.
 
 ### Key Features
 1. AI-driven Legal Assistance (LawGPT): Utilizes the Llama2 7B model to provide intelligent legal insights, answer queries, and assist with case analysis, enabling lawyers to focus on strategic decision-making.
